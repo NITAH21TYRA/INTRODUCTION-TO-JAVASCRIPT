@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2>My First Javascript</h2>
+    <button type="button" onclick="document.getElementById('demo').innerHTML = Date()">Click me to display date and time</button>
+    <p id="demo"></p>
+    <button onclick="document.getElementById('myImage').src='./IMAGES/on.bulb.jpg'">Turn on the light</button>
+    <img id="myImage" src="./IMAGES/on.bulb.jpg" style="width: 500px">
+    <button onclick="document.getElementById('myImage').src='./IMAGES/off.bulb.jpg'">Turn off the light</button><br><br>
+    
+    
+    <button type="button" onclick="myFunction()">font size</button>
+    <p id="demo">Welcome.</p>
+    <script>
+    function myFunction() {
+      document.getElementById("demo").style.fontSize = "x-large";
+    }
+    </script><br>
+    <p>My plan</p>
+    <button onclick="myFunction()">Click Me</button>
+
+    <div id="myDIV">
+        My business plan.
+        </div>
+        
+        <script>
+        function myFunction() {
+          var x = document.getElementById("myDIV");
+          if (x.style.display === "none") {
+            x.style.display = "block";
+          } else {
+            x.style.display = "none";
+          }
+        }
+        </script>
+    
+</body>
+</html>
